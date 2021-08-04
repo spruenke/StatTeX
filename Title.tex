@@ -1,0 +1,54 @@
+\renewcommand*{\thefootnote}{\alph{footnote}}
+\begin{titlepage}
+\pagestyle{empty}
+\begin{center}
+
+    {\Large{\bf Title of the Paper to be Published as a Working Paper}} \vspace{0.5cm}
+
+
+    {\normalsize Working Paper as of \today \\\vspace{0.5cm}
+    by}\\\vspace{0.5cm}
+    {\normalsize{\bf
+    Author 1 \textsuperscript{a} \\
+    Author 2 \textsuperscript{b} \\
+    Author 3 \textsuperscript{c} }}\\\vspace{1.5cm}
+   
+	\begin{minipage}{0.9\textwidth}
+	\begin{tcolorbox}[title=Abstract, fontupper = \footnotesize]
+	\blindtext \blindtext
+\end{tcolorbox}
+	
+	\end{minipage}
+
+    
+    \vfill
+  \begin{figure}[!b]
+    \centering
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \begin{tcolorbox}[title=Affiliations, fontupper = \footnotesize]
+        \begin{tabular}{ll}
+        a & University 1, Institute \\
+        & Street, ZIP + City \\
+        b & University 2, Institute \\
+        & Street, ZIP + City \\
+        c & Univerity 3, Institute \\
+        & Street, ZIP + City
+        \end{tabular}
+        \end{tcolorbox}
+        %\includegraphics[scale = 0.9]{hulogo.pdf} % first 		figure itself
+    \end{minipage}\hspace*{0.1 \textwidth}
+    \begin{minipage}{0.35\textwidth}
+       \centering
+       \begin{tcolorbox}[title=Grants, fontupper = \footnotesize]
+       Grant 1 \\
+       Grant 2
+       \end{tcolorbox}
+       % \includegraphics[scale = 0.45]{irtglogo1.pdf} % second figure itself
+    \end{minipage}
+\end{figure}
+
+\end{center}
+\end{titlepage}
+\renewcommand*{\thefootnote}{\arabic{footnote}}
+\setcounter{footnote}{0}
